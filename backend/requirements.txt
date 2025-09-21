@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+pandas
+openpyxl
+streamlit
+python-multipart
+plotly
+openpyxl
+cv2
+
