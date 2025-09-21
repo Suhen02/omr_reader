@@ -1,0 +1,24 @@
+# Use a Python base image
+FROM python:3.11-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Install the missing OpenCV and other core dependencies
+# Use libgl1 which is a more generic package
+RUN apt-get update && apt-get install -y \
+    libgl1 \
+    libgthread-2.0-0
+
+# Copy and install backend dependencies
+COPY backend/requirements.txt requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the backend code
+COPY backend /app/backend
+
+# Expose the port for the FastAPI server
+EXPOSE 8000
+
+# Command to run the application with Uvicorn
+CMD ["uvicorn", "backend.api.main:app", "--host", "0.0.0.0", "--port", "8000"]

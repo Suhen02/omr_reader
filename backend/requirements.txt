@@ -7,5 +7,5 @@ streamlit
 python-multipart
 plotly
 openpyxl
-cv2
+opencv-python
 
