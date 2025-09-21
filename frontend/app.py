@@ -4,7 +4,7 @@ import requests
 import json
 import pandas as pd
 
-API_BASE = "http://127.0.0.1:8000/api"
+API_BASE = "https://omr-eval-api.onrender.com/api"
 st.set_page_config(page_title="OMR Evaluator", layout="wide")
 
 # ----- SESSION STATE -----
