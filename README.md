@@ -93,9 +93,10 @@ Data Handling: Pandas, JSON
 
 ## 📄 License
 
-MIT © 2025 \[Your Name]
+MIT © 2025 \[suhen02]
 
 
 
 Would you like me to create placeholder `assets/` folder structure and dummy image links for now, so you can just drop your screenshots there and commit?
 ```
+
